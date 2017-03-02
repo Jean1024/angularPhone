@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-md-2">
+        <!--Sidebar content-->
+        <p>
+            搜索:
+            <input type="text" />
+        </p>
+        <p>
+            排序:
+            <select>
+                <option value="name">Alphabetical</option>
+                <option value="age">Newest</option>
+            </select>
+        </p>
+    </div>
+    <div class="col-md-10" ng-controller='PhoneListController'>
+        <!--Body content-->
+        <ul class="phones">
+            <li class="thumbnail phone-list-item" ng-repeat='phone in data'>
+                <a href="#!/detail/{{phone.id}}.json" class="thumb">
+                    <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />
+                </a>
+                <a href="#!/detail/{{phone.id}}.json">{{phone.name}}</a>
+                <p>{{phone.snippet}}</p>
+            </li>
+        </ul>
+    </div>
+</div>
