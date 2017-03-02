@@ -3,5 +3,8 @@
     "angular": "^1.6.2",
     "angular-route": "^1.6.2",
     "bootstrap": "^3.3.7"
+  },
+  "scripts": {
+    "start": "http-server -p 5000 -c-1 -o"
   }
 }

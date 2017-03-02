@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="en" ng-app="phonecatApp">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <title>Google Phone Gallery</title>
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="app.css" />
-  <link rel="stylesheet" href="app.animations.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/app.animations.css" />
 </head>
 
 <body>
-  <div class="view-container">
+  <div class="view-container"  ng-app="app">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-2">
@@ -105,6 +105,11 @@
       </div>
     </div>
   </div>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/phone-list/phone-list-controller.js"></script>
+  <script src="app/phone-detail/phone-detail-controller.js"></script>
 </body>
 
 </html>
